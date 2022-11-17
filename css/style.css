@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+
+:root { /*when we want to repat same variable we can use these colors*/
+  --primary-color: #5e446e;
+  --secondary-color: #8791af;
+  --dark-color: #070707;
+  --light-color: #f4f4f4;
+  --success-color: #999b3c;
+  --error-color: #d9534f;
+}
+
+* {
+  box-sizing: border-box; /*this allows us to add padding and borders and stuff without having to the width of an element*/
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif; /*This gets from the link that I provided in the beginning*/
+  color: #333;
+  line-height: 1.6; /*spreate things a lit bit*/
+}
+
+ul {
+  list-style-type: none; /*to make sure We dont have any bullet points*/
+}
+
+a {
+  text-decoration: none; /* to get rid of under ugly lines*/
+  color: #333;
+}
+
+h1,
+h2 {
+  font-weight: 300; /*this will make it a little less bold*/
+  line-height: 1.2;
+  margin: 10px 0;/*top and bottom 10 left and right 0*/
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;/*this will help us to keep the pictures in side of their container even if picture is so big*/
+}
+
+code,
+pre {
+  background: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--primary-color);
+  color: #fff;
+  height: 70px;
+}
+
+.navbar ul {
+  display: flex; /*to make thing horizontal for exaomle home features docs will be horizontal*/
+}
+
+.navbar a {/*changes home futures docs*/
+  color: #fff;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+
+
+.navbar a:hover {/*this will basically hover when u move your mouse*/
+  border-bottom: 2px #fff solid;
+}
+
+.navbar .flex {
+  justify-content: space-between;/* to make space between items on the nav*/
+}
+
+/* Showcase */
+.showcase {
+  height: 400px;
+  background-color: var(--primary-color);
+  color: #fff;
+  position: relative; /*if we need to position anything absoluto withhin it, we can*/ 
+}
+
+.showcase h1 {
+  font-size: 40px;
+}
+
+.showcase p {
+  margin: 20px 0;
+}
+
+.showcase .grid {
+  overflow: visible;/*to get rid of scrol*/
+  grid-template-columns: 55% auto; /*for text part, auto for the form part*/
+  gap: 30px;
+}
+
+.showcase-text {
+  animation: slideInFromLeft 1s ease-in;
+}
+
+.showcase-form {
+  position: relative; /*because I want to add a top property*/
+  top: 60px;
+  height: 350px;
+  width: 400px;
+  padding: 40px;
+  z-index: 100;/*to make sure its always in front(name,surname)*/
+  justify-self: flex-end; /*to push the form to the right*/
+  animation: slideInFromRight 1s ease-in;
+}
+
+.showcase-form .form-control { /*will seperate from each other*/
+  margin: 30px 0;
+}
+
+.showcase-form input[type='text'],
+.showcase-form input[type='email'] {
+  border: 0; /*get rid of borders*/ 
+  border-bottom: 1px solid #b4becb;/*line in bottom*/
+  width: 100%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.showcase-form input:focus {
+  outline: none; /* get rid of border when mous clicked inside */
+}
+
+.showcase::before,
+.showcase::after {
+  content: '';  /* */
+  position: absolute;
+  height: 100px;
+  bottom: -70px;
+  right: 0;
+  left: 0;
+  background: #fff;
+  transform: skewY(-3deg);
+  -webkit-transform: skewY(-3deg);
+  -moz-transform: skewY(-3deg);
+  -ms-transform: skewY(-3deg);
+}
+
+/* Stats */
+.stats {
+  padding-top: 100px; /*this will push down all the things*/
+  animation: slideInFromBottom 1s ease-in;
+}
+
+.stats-heading { /*this will basically make 500 px whole sententence */
+  max-width: 500px;
+  margin: auto; /*this will put things to the center*/
+}
+
+.stats .grid h3 {
+  font-size: 35px;
+}
+
+.stats .grid p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/* Cloud */
+.cloud .grid {
+  grid-template-columns: 4fr 3fr; /*to get the dimensions that I want*/
+}
+
+/* Languages */
+
+.languages .flex {
+  flex-wrap: wrap; /*all the card will go next side when browser gets small*/
+}
+
+.languages .card {
+  text-align: center;
+  margin: 18px 10px 40px;
+  transition: transform 0.2s ease-in;
+}
+
+.languages .card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.languages .card:hover {
+  transform: translateY(-15px); /*when u make hover it will go up */
+}
+
+/* Features */
+.features-head img,
+.docs-head img {
+  width: 200px; /*make photo smaller*/
+  justify-self: flex-end; /*this will make the photo end side*/
+}
+
+.features-sub-head img {
+  width: 300px;
+  justify-self: flex-end;
+}
+
+.features-main .card > i {
+  margin-right: 20px;
+}
+
+.features-main .grid {
+  padding: 30px;
+}
+
+
+/* Docs */
+.docs-main h3 {
+  margin: 20px 0;
+}
+
+.docs-main .grid {
+  grid-template-columns: 1fr fr;
+  align-items: flex-start;
+}
+
+.docs-main nav li {
+  font-size: 17px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px #ccc solid;
+}
+
+.docs-main a:hover {
+  font-weight: bold;
+}
+
+
+/* Animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);/*this make start off the screen */
+  }
+
+  100% {
+    transform: translateX(0);/*to end up in normal postion*/
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Tablets and under */
+@media (max-width: 768px) {
+  .grid, /*to make all the things on the one column*/
+  .showcase .grid,
+  .stats .grid,
+  .cloud .grid,
+  .features-main .grid,
+  .docs-main .grid {
+    grid-template-columns: 1fr;
+   
+  }
+
+  .showcase { /*when we make closer everyting will push down*/
+    height: auto;
+  }
+
+  .showcase-text {
+    text-align: center;
+    margin-top: 40px;
+    animation: slideInFromTop 1s ease-in;
+  }
+
+  .showcase-form {
+    justify-self: center; /*it justiflies all the elements inside*/
+    margin: auto;
+    animation: slideInFromBottom 1s ease-in;
+  }
+
+
+  .features-head,
+  .features-sub-head,
+  .docs-head {
+    text-align: center; /*justify the text to the center */
+  }
+
+  .features-head img,
+  .features-sub-head img,
+  .docs-head img {
+    justify-self: center;/*justify the image to the center */
+  }
+
+  .features-main .grid > *:first-child,
+  .features-main .grid > *:nth-child(2) {
+    grid-column: 1; /*this will basically make one column when screen gets smaller*/
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .navbar {
+    height: 110px;
+  }
+
+  .navbar .flex {
+    flex-direction: column;/*this will put everything on top of each other */
+  }
+
+  .navbar ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);/*cool background*/
+  }
+  
+  .showcase-form {
+    width: 300px;
+  }
+  .footer-2{
+    text-align: center;
+  }
+}
+
