@@ -1,5 +1,5 @@
 function person() {
-    alert("This website was developed by Maksiym Laptin");
+    alert("This website was developed by Ismayil Maharramov");
 }
 
 function calculator()
