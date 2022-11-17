@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MAX | Cloud Hosting For Everyone</title>
+    
+        <style>
+          #train {
+            position: relative;
+            cursor: pointer;
+          }
+        </style>
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container">
+            <h1 class="logo"><a href = "index.html">MAX
+            </a>
+                
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Head -->
+    <section class="docs-head bg-primary py-3">
+        <div class="container grid">
+            <div>
+                <h1>Docs</h1>
+                <p class="lead">
+                    Learn how to work with the MAX platform
+                </p>
+            </div>
+            <img src="images/docs.png" alt="">
+        </div>
+    </section>
+
+    <!-- Docs main -->
+    <section class="docs-main my-4">
+       
+        <div class="container grid">
+          
+            <div class="card bg-light p-3">
+            
+                <select class="form-select" aria-label="Default select example"> <!--9 COMPONENTS-->
+                    <option selected>Essentials</option>
+                    <option value="1">Introduction</option>
+                    <option value="2">Requirements</option>
+                    <option value="3">Installation</option>
+                  </select> 
+            </div>
+            <div class="card">
+                <h2>Introduction</h2>
+                <p>A database is a planned grouping of data that has been organized and is typically kept electronically in a computer system. A database management system typically oversees a database (DBMS). The term "database system," which is frequently abbreviated to "database," refers to the combination of the data, the DBMS, and the applications that are connected to them.</p>
+
+                
+                
+                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?">Install DataBase</button> <!--6 COMPONENTS-->
+
+
+                <h3>Requirements</h3>
+                <ul>
+                    <li>Windows 10, Mac OSX, Linux</li>
+                    <li>Node.js v12 or higher</li>
+                </ul>
+
+                <h3>Install</h3>
+          
+                <p>Mac (Homebrew)</p>
+                <pre><code>$ brew install MAX-dt</code></pre>
+                <p>NPM</p>
+                <pre><code>$ npm install MAX-dt</code></pre>
+                <p>Yarn</p>
+                <pre><code>$ yarn install MAX-dt</code></pre>
+                
+
+            </div>
+            <img id="train" src="https://js.cx/clipart/train.gif" alt="" width="5" height="200">
+
+
+            <script>
+              train.onclick = function() {
+                let start = Date.now();
+          
+                let timer = setInterval(function() {
+                  let timePassed = Date.now() - start;
+          
+                  train.style.left = timePassed / 5 + 'px';
+          
+                  if (timePassed > 2000) clearInterval(timer);
+          
+                }, 20);
+              }
+            </script>
+        </div>
+    </section>
+    
+ <!-- Footer -->
+ <footer class="footer bg-dark py-5">
+    <div class="container grid grid-3">
+        <div>
+            <h1>MAX
+            </h1>
+            <p>Copyright &copy; 2022</p>
+        </div>
+        <nav class="grid grid1">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="docs.html">Docs</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+    
+    <div class ="footer-2 foot"><!--JavaScript HTML Event 2-->
+    <p>To see the the time and location click here!!</p>
+
+        <button class="btn btn-yeni" id="myBtn">Try it</button>
+
+        <p id="demo"></p>
+
+        <script>
+        document.getElementById("myBtn").onclick = displayDate;
+
+        function displayDate() {
+          document.getElementById("demo").innerHTML = Date();
+        }
+        </script>
+      </div>
+      <div class="card">
+        <button class="btn" onclick="person()"> To see who developed this website click here!! </button>  
+      </div>
+
+</footer>
+</body>
+</html>
