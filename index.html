@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MAX | Cloud Hosting For Everyone</title>
+    <script src="function.js"></script>
+
+</head>
+<body>
+  
+    
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="container"> <!--The reason I put flex, using flex I can align nav,hi however I want-->
+            <h1 class="logo">
+                <a href = "index.html">MAX
+            </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                </ul>
+            </nav>
+         </div>
+       
+    </div>
+    
+  
+  <div class="container-sm"> <!--5 COMPONENTS--> <!--Carousel-->
+
+    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/cloud.png" class="d-block w-100" alt="..." width = "500" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="images/server2.png" class="d-block w-100" alt="..." width ="500" height="500">
+          </div>
+          <div class="carousel-item">
+            <img src="images/maxx.png" class="d-block w-100" alt="..." width ="500" height="500">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- Showcase -->
+  </div>
+
+    <section class="showcase">
+      <div class="container grid"><!--if we need to specifically the showcase grid -->
+          <div class="showcase-text">
+              <h1>DATABASE</h1>
+              <p>A database is an organized collection of structured information, or data, typically stored electronically in a computer system. A database is usually controlled by a database management system (DBMS).</p>
+              <a href="features.html" class="btn btn-outline">Read More</a>
+          </div>
+          
+          <div class="showcase-form card"><!--this is going to be put into a card which is a backgroud of a backgroud color with padding and rounded borders, so we should have these classes   -->
+              <h2>Check your data</h2>
+               <form class="form" action="/">
+                  <div class="form-control">
+                      <input  id="name" type="text" name="name" placeholder="Name" required>
+                  </div>
+                  <div class="form-control">
+                      <input id="password" type="text" name="sname" placeholder="Second Name" required>
+                  </div>
+                <input type="submit" value="Check" class="btn btn-primary" onclick="auth()">
+              </form>
+            </div>
+          <script>
+
+          </script>
+
+
+      </div>
+  </section>
+  
+    <!-- Stats -->
+    <section class="stats stats1">
+        <div class="container">
+            <h3 class="stats-heading text-center my-1"> <!--this -1 is ganna be margin top and bottom --> 
+                Welcome to the best platform for DATABASE
+            </h3>
+            
+            <div class="grid grid-3 text-center my-4">
+                <div>
+                    <i class="fas fa-server fa-3x"></i>
+                    <h3>10,349,405</h3>
+                    <p class="text-secondary">Deployments</p>
+                </div>
+                <div>
+                    <i class="fas fa-upload fa-3x"></i>
+                    <h3>987 TB</h3>
+                    <p class="text-secondary">Published</p>
+                </div>
+                <div>
+                    <i class="fas fa-project-diagram fa-3x"></i>
+                    <h3>2,343,265</h3>
+                    <p class="text-secondary">Projects</p>
+                </div>
+                <div class="spinner-border" role="status"> <!--8 COMPONENTS-->
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">35%</div><!--7 COMPONENTS-->
+                  </div>
+                  
+            </div>
+            <div class="card"> <!--second function-->
+              <button class="btn" onclick="calculator()">Check my simple calculator</button>
+            
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Cloud -->
+    <section class="cloud bg-primary my-1 py-2">
+        <div class="container grid">
+            <div class="text-center">
+                <h2 class="lg">Extreme DataBase system</h2><!--lg means size-->
+                <p class="lead my-1">DataBase system like you've never seen. Fast, efficient and scalable</p>
+                <button type="button" class="btn btn-success">Read More</button><!--2 COMPONENTS-->
+            </div>
+            <img src="images/cloud.png" alt="">
+        </div>
+    </section>
+
+
+    <!-- Languages -->
+    <section class="languages">
+        <h2 class="md text-center my-2"> <!--md means meduim-->
+          <p id="demo2"> </p><!--Dom Method 1 The following example changes the content (the innerHTML) of the <p> element with id="demo"-->
+
+            <script> 
+            document.getElementById("demo2").innerHTML = "Supported Languages";
+            </script>
+            
+        </h2>
+        <div class="container flex"> <!--I used flex because I want them to align into a row-->
+            <div class="card">
+                <h4>Node.js</h4>
+                <img src="images/logos/node.png" alt="">
+            </div>
+            <div class="card">
+                <h4>Python</h4>
+                <img src="images/logos/python.png" alt="">
+              </div>
+              <div class="card">
+                <h4>C#</h4>
+                <img src="images/logos/csharp.png" alt="">
+              </div>
+              <div class="card">
+                <h4>Ruby</h4>
+                <img src="images/logos/ruby.png" alt="">
+              </div>
+              <div class="card">
+                <h4>PHP</h4>
+                <img src="images/logos/php.png" alt="">
+              </div>
+              <div class="card">
+                <h4>Scala</h4>
+                <img src="images/logos/scala.png" alt="">
+              </div>
+              <div class="card">
+                <h4>Clojure</h4>
+                <img src="images/logos/clojure.png" alt="">
+              </div>
+            </div>
+              
+              <div class="card"> <!--JavaScript HTML Event 1-->
+                <h2 onclick="this.innerHTML='Nooooo!, u just need discipline!!!'">Is it too late to learn these languages in 2022?</h2>
+        </div>
+        
+      
+            
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Choose languages that are on the above, you want to learn more about it.
+          </a>
+        
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://nodejs.org/en/about/">Node.js</a></li>
+            <li><a class="dropdown-item" href="https://www.python.org/doc/essays/blurb/">Python</a></li>
+            <li><a class="dropdown-item" href="https://en.wikipedia.org/wiki/C_Sharp_(programming_language)">C#</a></li>
+            <li><a class="dropdown-item" href="https://www.ruby-lang.org/en/">Ruby</a></li>
+            <li><a class="dropdown-item" href="https://www.php.net/manual/en/intro-whatis.php">PHP</a></li>
+            <li><a class="dropdown-item" href="https://www.scala-lang.org/">Scala</a></li>
+            <li><a class="dropdown-item" href="https://clojure.org/">Clojure</a></li>
+          </ul>
+        </div>
+    </section>
+    <div class="plus"> <!--DOM METHOD 2-->
+      <p >Please rate my website:</p>
+    <p class=" pl1">
+        <label for="very-poor">
+            <input type="radio" name="rate" value="Very poor" id="very-poor"> Very poor
+        </label>
+        <label for="poor">
+            <input type="radio" name="rate" value="Poor" id="poor"> Poor
+        </label>
+        <label for="ok">
+            <input type="radio" name="rate" value="OK" id="ok"> OK
+        </label>
+        <label for="good">
+            <input id="good" type="radio" name="rate" value="Good"> Good
+        </label>
+        <label for="very-good">
+            <input type="radio" name="rate" value="Very Good" id="very-good"> Very Good
+        </label>
+    </p>
+    <p>
+        <button id="btnRate" class="btn btns">Submit</button>
+    </p>
+    <p id="output"></p>
+    <script>
+        let btn = document.getElementById('btnRate');
+        let output = document.getElementById('output');
+
+        btn.addEventListener('click', () => {
+            let rates = document.getElementsByName('rate');
+            rates.forEach((rate) => {
+                if (rate.checked) {
+                    output.innerText = `You selected: ${rate.value}`;
+                }
+            });
+
+        });
+    </script>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+        <div class="container grid grid-3">
+            <div>
+                <h1>MAX
+                </h1>
+                <p>Copyright &copy; 2022</p>
+            </div>
+            <div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="features.html">Features</a></li>
+                    <li><a href="docs.html">Docs</a></li>
+                </ul>
+            </nav>
+          </div>
+        </div>
+        
+        
+          
+          <div class ="footer-2 foot"><!--JavaScript HTML Event 1-->
+            <p>To see the the time and location click here!!</p>
+    
+                <button class="btn btn-yeni" id="myBtn">Try it</button>
+    
+                <p id="demo"></p>
+    
+                <script>
+                document.getElementById("myBtn").onclick = displayDate;
+    
+                function displayDate() {
+                  document.getElementById("demo").innerHTML = Date();
+                }
+                </script>
+          </div>
+
+          <div class="card">
+            <button class="btn" onclick="person()"> To see who developed this website click here!! </button> <!--First Function-->
+          </div>
+          
+    </footer>
+</body>
+</html>
